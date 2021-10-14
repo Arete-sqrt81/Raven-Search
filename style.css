@@ -1,0 +1,101 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/*
+    en div i headern med bilden i. den diven ska vara position absolute. bilden ska vara pos relative. 
+    eller en div i min header som har justidfuy content flex sstart
+*/
+
+
+header {
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    background: white;
+    text-align: center;
+    
+}
+
+
+header .logo{
+
+}
+
+header .tagline{
+    display: flex;
+    flex-direction: column;
+}
+header .tagline h1{
+    position: relative;
+    bottom: 1rem;
+    margin: 0.5rem;
+    
+}
+
+input{
+    padding: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.5rem 3rem;
+    margin-left: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.next {
+    position: fixed;
+    top: 90%;
+    right: 0%;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+img {
+    width: auto;
+    height: 10rem;
+}
+
+#lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    list-style: none;
+}
+
+main{
+    width: 90%;
+    margin: 12vh 50%;
+    transform : translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(5,200px);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+/* index timestamp 4.37 
