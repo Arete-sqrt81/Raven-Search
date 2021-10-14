@@ -13,7 +13,7 @@ form.addEventListener('submit', e =>{
 });
 
 async function getData(query){
-    const response = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${auth}&tags=${query}&format=json&nojsoncallback=1`);
+    const response = await fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${auth}&tags=${query}&text=${query}&format=json&nojsoncallback=1`);
     // detta är data vi får tillbaka
     const data = await response.json();
     showPhotos(data);

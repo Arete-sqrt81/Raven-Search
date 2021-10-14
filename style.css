@@ -1,18 +1,13 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+
+
 
 body{
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #6f747b;
 }
-/*
-    en div i headern med bilden i. den diven ska vara position absolute. bilden ska vara pos relative. 
-    eller en div i min header som har justidfuy content flex sstart
-*/
 
 
 header {
@@ -25,14 +20,17 @@ header {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    background: white;
+    
+    background: transparent;
     text-align: center;
+    border-style: none;
     
 }
 
 
 header .logo{
+    box-shadow:  rgba(220, 220, 220, 0.8);
+    
 
 }
 
@@ -44,23 +42,38 @@ header .tagline h1{
     position: relative;
     bottom: 1rem;
     margin: 0.5rem;
+    font-family: 'Ephesis', cursive;
+    font-size: 4rem;
+    color: rgba(220, 220, 220, 0.8);
+    text-shadow: 3px -3px 2px #816b9a;
     
 }
 
 input{
     padding: 0.5rem;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    border-color: #816b9a;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-radius: 1rem 0 0 1rem;
+    margin-right: 0;
+
 }
 
 form button {
-    padding: 0.5rem 3rem;
-    margin-left: 10px;
-    background-color: blue;
+    padding: 0.5rem 1rem;
+    
+    background-color: #816b9a;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
     text-align: center;
+    border-color: #816b9a;
+    border-style: solid;
+    border-radius: 0 1rem 1rem 0;
+    margin-right: 0;
 }
 
 .next {
@@ -77,6 +90,7 @@ form button {
 img {
     width: auto;
     height: 10rem;
+    /* box-shadow: 1rem 1rem 1rem 1rem #816b9a;  */
 }
 
 #lista{
@@ -86,16 +100,3 @@ img {
     margin-top: 10rem;
     list-style: none;
 }
-
-main{
-    width: 90%;
-    margin: 12vh 50%;
-    transform : translateX(-50%);
-    display: grid;
-    grid-template-columns: repeat(5,200px);
-    row-gap: 10px;
-    column-gap: 10px;
-    justify-content: center;
-}
-
-/* index timestamp 4.37 
